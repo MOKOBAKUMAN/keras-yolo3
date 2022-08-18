@@ -9,7 +9,7 @@ A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [allanzelener/
 
 ## Blog
 
-日本語での解説はこちらの記事をご確認ください。
+日本語での解説はこちらの記事をご確認ください。  
 [【物体検出】keras−yolo3の学習方法](https://sleepless-se.net/2019/06/21/how-to-train-keras%e2%88%92yolo3/)  
 [【物体検出】keras−yolo3で独自データセットの学習方法](https://sleepless-se.net/2019/06/21/how-to-train-keras%E2%88%92yolo3/)  
 [【物体検出】(GPU版)YOLO独自モデル簡単学習方法](https://sleepless-se.net/2019/06/23/yolo-original-model-training-on-colab/)  
