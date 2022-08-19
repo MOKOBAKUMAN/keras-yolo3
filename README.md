@@ -19,9 +19,46 @@ A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [allanzelener/
 
 ## dataset
 
-麻雀牌を麻雀用マットの上に複数枚並べて撮影してできた49枚の画像
+麻雀牌を麻雀用マットの上に複数枚並べて撮影してできた49枚の画像  
+1から9までのピンズ牌（以下、1p, 2p, 3p, ...,9Pと呼称）のみを対象  
+
+## resize
+
+撮影に使用したスマートフォンの都合上、画像サイズは4032×3024 pixel  
+ただし、この後、Googl Colabo上で学習させることを想定し、  
+画像サイズを216×162 pixelにリサイズ
+
+## annotation
+
+アノテーションとは、画像のどこに対象物があるのかを伝えること。  
+VoTT(Visual Object Tagging Tool, Microsoft社)を用いてアノテーション 作業を実施  
+
+VoTTの使い方については、以下を参照  
+[ 【物体検出】アノテーションツールVoTTの使い方](https://sleepless-se.net/2019/06/21/how-to-use-vott/)  
+
+## training
+
+Google Colaboratoryを用いて、学習を行う  
+以下、ソースコード  
+
+学習終了後、学習済みモデルをローカルPC上に保存  
+
+使用上の制約があるため、要注意  
+1. 12時間ルール  
+2. 90分セッション切れルール  
 
 
+## test
+
+ローカル環境でYOLOを動かす  
+
+結果がこちら...  
+
+
+全然だめでした。  
+おそらく、原因として考えられるのは、    
+・学習に使う画像データの枚数が不足  
+・Google Colab上での学習が途中  
 
 ## Quick Start
 
